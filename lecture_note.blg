@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: lecture_note.aux
+The style file: abbrv.bst
+Database file #1: lecture_note.bib
+Warning--empty journal in bishop1994mixture
+Warning--empty journal in cho2015describing
+Warning--empty booktitle in dong2015multi
+Warning--empty journal in russell1995artificial
+You've used 113 entries,
+            2118 wiz_defined-function locations,
+            1108 strings with 23853 characters,
+and the built_in function-call counts, 41118 in all, are:
+= -- 3992
+> -- 2137
+< -- 41
++ -- 855
+- -- 725
+* -- 2708
+:= -- 6724
+add.period$ -- 359
+call.type$ -- 113
+change.case$ -- 684
+chr.to.int$ -- 0
+cite$ -- 117
+duplicate$ -- 1647
+empty$ -- 3109
+format.name$ -- 725
+if$ -- 8720
+int.to.chr$ -- 0
+int.to.str$ -- 113
+missing$ -- 119
+newline$ -- 568
+num.names$ -- 235
+pop$ -- 847
+preamble$ -- 1
+purify$ -- 582
+quote$ -- 0
+skip$ -- 1209
+stack$ -- 0
+substring$ -- 2153
+swap$ -- 457
+text.length$ -- 41
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 428
+warning$ -- 4
+while$ -- 370
+width$ -- 116
+write$ -- 1219
+(There were 4 warnings)

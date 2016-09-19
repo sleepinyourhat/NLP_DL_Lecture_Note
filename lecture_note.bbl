@@ -1,0 +1,651 @@
+\begin{thebibliography}{100}
+
+\bibitem{VQA}
+S.~Antol, A.~Agrawal, J.~Lu, M.~Mitchell, D.~Batra, C.~L. Zitnick, and
+  D.~Parikh.
+\newblock Vqa: Visual question answering.
+\newblock In {\em International Conference on Computer Vision (ICCV)}, 2015.
+
+\bibitem{bahdanau2014neural}
+D.~Bahdanau, K.~Cho, and Y.~Bengio.
+\newblock Neural machine translation by jointly learning to align and
+  translate.
+\newblock {\em arXiv preprint arXiv:1409.0473}, 2014.
+
+\bibitem{baltescu2014pragmatic}
+P.~Baltescu and P.~Blunsom.
+\newblock Pragmatic neural language modelling in machine translation.
+\newblock {\em arXiv preprint arXiv:1412.7119}, 2014.
+
+\bibitem{bastien2012theano}
+F.~Bastien, P.~Lamblin, R.~Pascanu, J.~Bergstra, I.~Goodfellow, A.~Bergeron,
+  N.~Bouchard, D.~Warde-Farley, and Y.~Bengio.
+\newblock Theano: new features and speed improvements.
+\newblock {\em arXiv preprint arXiv:1211.5590}, 2012.
+
+\bibitem{baydin2015automatic}
+A.~G. Baydin, B.~A. Pearlmutter, and A.~A. Radul.
+\newblock Automatic differentiation in machine learning: a survey.
+\newblock {\em arXiv preprint arXiv:1502.05767}, 2015.
+
+\bibitem{bengio2013advances}
+Y.~Bengio, N.~Boulanger-Lewandowski, and R.~Pascanu.
+\newblock Advances in optimizing recurrent networks.
+\newblock In {\em Acoustics, Speech and Signal Processing (ICASSP), 2013 IEEE
+  International Conference on}, pages 8624--8628. IEEE, 2013.
+
+\bibitem{bengio2013estimating}
+Y.~Bengio, N.~L{\'e}onard, and A.~Courville.
+\newblock Estimating or propagating gradients through stochastic neurons for
+  conditional computation.
+\newblock {\em arXiv preprint arXiv:1308.3432}, 2013.
+
+\bibitem{bengio2006neural}
+Y.~Bengio, H.~Schwenk, J.-S. Sen{\'e}cal, F.~Morin, and J.-L. Gauvain.
+\newblock Neural probabilistic language models.
+\newblock In {\em Innovations in Machine Learning}, pages 137--186. Springer
+  Berlin Heidelberg, 2006.
+
+\bibitem{bengio1994learning}
+Y.~Bengio, P.~Simard, and P.~Frasconi.
+\newblock Learning long-term dependencies with gradient descent is difficult.
+\newblock {\em Neural Networks, IEEE Transactions on}, 5(2):157--166, 1994.
+
+\bibitem{bergstra2010theano}
+J.~Bergstra, O.~Breuleux, F.~Bastien, P.~Lamblin, R.~Pascanu, G.~Desjardins,
+  J.~Turian, D.~Warde-Farley, and Y.~Bengio.
+\newblock Theano: a cpu and gpu math expression compiler.
+\newblock In {\em Proceedings of the Python for scientific computing conference
+  (SciPy)}, volume~4, page~3. Austin, TX, 2010.
+
+\bibitem{besag1975statistical}
+J.~Besag.
+\newblock Statistical analysis of non-lattice data.
+\newblock {\em The statistician}, pages 179--195, 1975.
+
+\bibitem{bishop1994mixture}
+C.~M. Bishop.
+\newblock Mixture density networks.
+\newblock 1994.
+
+\bibitem{bishop2006pattern}
+C.~M. Bishop.
+\newblock {\em Pattern recognition and machine learning}.
+\newblock springer, 2006.
+
+\bibitem{bordes2015large}
+A.~Bordes, N.~Usunier, S.~Chopra, and J.~Weston.
+\newblock Large-scale simple question answering with memory networks.
+\newblock {\em arXiv preprint arXiv:1506.02075}, 2015.
+
+\bibitem{Bottou1998}
+L.~Bottou.
+\newblock Online algorithms and stochastic approximations.
+\newblock In D.~Saad, editor, {\em Online Learning and Neural Networks}.
+  Cambridge University Press, Cambridge, UK, 1998.
+
+\bibitem{breiman2001statistical}
+L.~Breiman et~al.
+\newblock Statistical modeling: The two cultures (with comments and a rejoinder
+  by the author).
+\newblock {\em Statistical Science}, 16(3):199--231, 2001.
+
+\bibitem{Bridle1990}
+J.~S. Bridle.
+\newblock Training stochastic model recognition algorithms as networks can lead
+  to maximum mutual information estimation of parameters.
+\newblock In D.~Touretzky, editor, {\em Advances in Neural Information
+  Processing Systems 2}, pages 211--217. Morgan-Kaufmann, 1990.
+
+\bibitem{Brochu2010}
+E.~{Brochu}, V.~M. {Cora}, and N.~{de Freitas}.
+\newblock A tutorial on {B}ayesian optimization of expensive cost functions,
+  with application to active user modeling and hierarchical reinforcement
+  learning.
+\newblock {\em ar{X}iv:{\tt 1012.2599 [cs.LG]}}, Dec. 2010.
+
+\bibitem{brown1990statistical}
+P.~F. Brown, J.~Cocke, S.~A.~D. Pietra, V.~J.~D. Pietra, F.~Jelinek, J.~D.
+  Lafferty, R.~L. Mercer, and P.~S. Roossin.
+\newblock A statistical approach to machine translation.
+\newblock {\em Computational linguistics}, 16(2):79--85, 1990.
+
+\bibitem{callison2006re}
+C.~Callison-Burch, M.~Osborne, and P.~Koehn.
+\newblock Re-evaluation the role of bleu in machine translation research.
+\newblock In {\em EACL}, volume~6, pages 249--256, 2006.
+
+\bibitem{carnie2013syntax}
+A.~Carnie.
+\newblock {\em Syntax: A generative introduction}.
+\newblock John Wiley \& Sons, 2013.
+
+\bibitem{cettoloEtAl:EAMT2012}
+M.~Cettolo, C.~Girardi, and M.~Federico.
+\newblock Wit$^3$: Web inventory of transcribed and translated talks.
+\newblock In {\em Proceedings of the 16$^{th}$ Conference of the European
+  Association for Machine Translation (EAMT)}, pages 261--268, Trento, Italy,
+  May 2012.
+
+\bibitem{Chapelle2006}
+O.~Chapelle, B.~Sch{\"o}lkopf, and A.~Zien, editors.
+\newblock {\em Semi-Supervised Learning}.
+\newblock MIT Press, Cambridge, MA, 2006.
+
+\bibitem{chen1996empirical}
+S.~F. Chen and J.~Goodman.
+\newblock An empirical study of smoothing techniques for language modeling.
+\newblock In {\em Proceedings of the 34th annual meeting on Association for
+  Computational Linguistics}, pages 310--318. Association for Computational
+  Linguistics, 1996.
+
+\bibitem{Chen+Zitnick-arxiv2014}
+X.~Chen and C.~L. Zitnick.
+\newblock Learning a recurrent visual representation for image caption
+  generation.
+\newblock arXiv:1411.5654, 2014.
+
+\bibitem{cho2015describing}
+K.~Cho, A.~Courville, and Y.~Bengio.
+\newblock Describing multimedia content using attention-based encoder--decoder
+  networks.
+\newblock 2015.
+
+\bibitem{cho2014properties}
+K.~Cho, B.~van Merri{\"e}nboer, D.~Bahdanau, and Y.~Bengio.
+\newblock On the properties of neural machine translation: Encoder-decoder
+  approaches.
+\newblock {\em arXiv preprint arXiv:1409.1259}, 2014.
+
+\bibitem{cho2014learning}
+K.~Cho, B.~Van~Merri{\"e}nboer, C.~Gulcehre, D.~Bahdanau, F.~Bougares,
+  H.~Schwenk, and Y.~Bengio.
+\newblock Learning phrase representations using rnn encoder-decoder for
+  statistical machine translation.
+\newblock {\em arXiv preprint arXiv:1406.1078}, 2014.
+
+\bibitem{Cho-et-al-EMNLP2014}
+K.~Cho, B.~van Merrienboer, C.~Gulcehre, F.~Bougares, H.~Schwenk, and
+  Y.~Bengio.
+\newblock Learning phrase representations using {RNN} encoder-decoder for
+  statistical machine translation.
+\newblock In {\em Proceedings of the Empiricial Methods in Natural Language
+  Processing (EMNLP 2014)}, Oct. 2014.
+
+\bibitem{chomsky1959review}
+N.~Chomsky.
+\newblock A review of {B. F.} skinner's verbal behavior.
+\newblock {\em Language}, 35(1):26--58, 1959.
+
+\bibitem{chomsky1968linguistic}
+N.~Chomsky.
+\newblock Linguistic contributions to the study of mind (future).
+\newblock {\em Language and thinking}, pages 323--364, 1968.
+
+\bibitem{chomsky2002syntactic}
+N.~Chomsky.
+\newblock {\em Syntactic structures}.
+\newblock Walter de Gruyter, 2002.
+
+\bibitem{collobert2011natural}
+R.~Collobert, J.~Weston, L.~Bottou, M.~Karlen, K.~Kavukcuoglu, and P.~Kuksa.
+\newblock Natural language processing (almost) from scratch.
+\newblock {\em The Journal of Machine Learning Research}, 12:2493--2537, 2011.
+
+\bibitem{Cover1965}
+T.~M. Cover.
+\newblock Geometrical and statistical properties of systems of linear
+  inequalities with applications in pattern recognition.
+\newblock {\em IEEE Transactions on Electronic Computers}, EC-14(3):326--334,
+  1965.
+
+\bibitem{denker1991transforming}
+J.~Denker and Y.~Lecun.
+\newblock Transforming neural-net output levels to probability distributions.
+\newblock In {\em Advances in Neural Information Processing Systems 3}.
+  Citeseer, 1991.
+
+\bibitem{denkowski:lavie:meteor-wmt:2014}
+M.~Denkowski and A.~Lavie.
+\newblock Meteor universal: Language specific translation evaluation for any
+  target language.
+\newblock In {\em Proceedings of the EACL 2014 Workshop on Statistical Machine
+  Translation}, 2014.
+
+\bibitem{Donahue-et-al-arxiv2014}
+J.~Donahue, L.~A. Hendricks, S.~Guadarrama, M.~Rohrbach, S.~Venugopalan,
+  K.~Saenko, and T.~Darrell.
+\newblock Long-term recurrent convolutional networks for visual recognition and
+  description.
+\newblock arXiv:1411.4389, 2014.
+
+\bibitem{dong2015multi}
+D.~Dong, H.~Wu, W.~He, D.~Yu, and H.~Wang.
+\newblock Multi-task learning for multiple language translation.
+\newblock ACL, 2015.
+
+\bibitem{Durrani2014}
+N.~Durrani, B.~Haddow, P.~Koehn, and K.~Heafield.
+\newblock {E}dinburgh's phrase-based machine translation systems for {WMT}-14.
+\newblock In {\em Proceedings of the Ninth Workshop on Statistical Machine
+  Translation}, pages 97--104. Association for Computational Linguistics
+  Baltimore, MD, USA, 2014.
+
+\bibitem{Fang-et-al-arxiv2014}
+H.~Fang, S.~Gupta, F.~Iandola, R.~Srivastava, L.~Deng, P.~Dollár, J.~Gao,
+  X.~He, M.~Mitchell, J.~C. Platt, C.~L. Zitnick, and G.~Zweig.
+\newblock From captions to visual concepts and back.
+\newblock arXiv:1411.4952, 2014.
+
+\bibitem{firth1957}
+J.~R. Firth.
+\newblock A synopsis of linguistic theory 1930-1955.
+\newblock {\em Oxford: Philological Society}, 1957.
+
+\bibitem{Fletcher1987}
+R.~Fletcher.
+\newblock {\em Practical Methods of Optimization}.
+\newblock Wiley-Interscience, New York, NY, USA, 2nd edition, 1987.
+
+\bibitem{forcada1997recursive}
+M.~L. Forcada and R.~P. {\~N}eco.
+\newblock Recursive hetero-associative memories for translation.
+\newblock In {\em Biological and Artificial Computation: From Neuroscience to
+  Technology}, pages 453--462. Springer, 1997.
+
+\bibitem{furcy2005limited}
+D.~Furcy and S.~Koenig.
+\newblock Limited discrepancy beam search.
+\newblock In {\em IJCAI}, pages 125--131, 2005.
+
+\bibitem{gers2000learning}
+F.~A. Gers, J.~Schmidhuber, and F.~Cummins.
+\newblock Learning to forget: Continual prediction with lstm.
+\newblock {\em Neural computation}, 12(10):2451--2471, 2000.
+
+\bibitem{glorot2011deep}
+X.~Glorot, A.~Bordes, and Y.~Bengio.
+\newblock Deep sparse rectifier neural networks.
+\newblock In {\em International Conference on Artificial Intelligence and
+  Statistics}, pages 315--323, 2011.
+
+\bibitem{goldberg2015primer}
+Y.~Goldberg.
+\newblock A primer on neural network models for natural language processing.
+\newblock {\em arXiv preprint arXiv:1510.00726}, 2015.
+
+\bibitem{goodfellow2013maxout}
+I.~Goodfellow, D.~Warde-farley, M.~Mirza, A.~Courville, and Y.~Bengio.
+\newblock Maxout networks.
+\newblock In {\em Proceedings of the 30th International Conference on Machine
+  Learning (ICML-13)}, pages 1319--1327, 2013.
+
+\bibitem{greff2015lstm}
+K.~Greff, R.~K. Srivastava, J.~Koutn{\'\i}k, B.~R. Steunebrink, and
+  J.~Schmidhuber.
+\newblock Lstm: A search space odyssey.
+\newblock {\em arXiv preprint arXiv:1503.04069}, 2015.
+
+\bibitem{he2015delving}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun.
+\newblock Delving deep into rectifiers: Surpassing human-level performance on
+  imagenet classification.
+\newblock {\em arXiv preprint arXiv:1502.01852}, 2015.
+
+\bibitem{Heafield-estimate}
+K.~Heafield, I.~Pouzyrevsky, J.~H. Clark, and P.~Koehn.
+\newblock Scalable modified {Kneser-Ney} language model estimation.
+\newblock In {\em Proceedings of the 51st Annual Meeting of the Association for
+  Computational Linguistics}, pages 690--696, Sofia, Bulgaria, August 2013.
+
+\bibitem{hochreiter2001gradient}
+S.~Hochreiter, Y.~Bengio, P.~Frasconi, and J.~Schmidhuber.
+\newblock {\em Gradient flow in recurrent nets: the difficulty of learning
+  long-term dependencies}, volume~1.
+\newblock A field guide to dynamical recurrent neural networks. IEEE Press,
+  2001.
+
+\bibitem{hochreiter1997long}
+S.~Hochreiter and J.~Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural computation}, 9(8):1735--1780, 1997.
+
+\bibitem{Huang2006}
+G.-B. Huang, Q.-Y. Zhu, and C.-K. Siew.
+\newblock Extreme learning machine: Theory and applications.
+\newblock {\em Neurocomputing}, 70(1–-3):489--501, 2006.
+
+\bibitem{jean2014using}
+S.~Jean, K.~Cho, R.~Memisevic, and Y.~Bengio.
+\newblock On using very large target vocabulary for neural machine translation.
+\newblock In {\em ACL 2015}, 2014.
+
+\bibitem{jernite2015fast}
+Y.~Jernite, A.~M. Rush, and D.~Sontag.
+\newblock A fast variational approach for learning markov random field language
+  models.
+\newblock {\em 32nd International Conference on Machine Learning (ICML)}, 2015.
+
+\bibitem{ji2015document}
+Y.~Ji, T.~Cohn, L.~Kong, C.~Dyer, and J.~Eisenstein.
+\newblock Document context language models.
+\newblock {\em arXiv preprint arXiv:1511.03962}, 2015.
+
+\bibitem{jozefowicz2015empirical}
+R.~Jozefowicz, W.~Zaremba, and I.~Sutskever.
+\newblock An empirical exploration of recurrent network architectures.
+\newblock In {\em Proceedings of the 32nd International Conference on Machine
+  Learning (ICML-15)}, pages 2342--2350, 2015.
+
+\bibitem{Karpathy+Li-arxiv2014}
+A.~Karpathy and F.-F. Li.
+\newblock Deep visual-semantic alignments for generating image descriptions.
+\newblock arXiv:1412.2306, 2014.
+
+\bibitem{kiela2014learning}
+D.~Kiela and L.~Bottou.
+\newblock Learning image embeddings using convolutional neural networks for
+  improved multi-modal semantics.
+\newblock {\em Proceedings of EMNLP}, 2014, 2014.
+
+\bibitem{kim2015character}
+Y.~Kim, Y.~Jernite, D.~Sontag, and A.~M. Rush.
+\newblock Character-aware neural language models.
+\newblock {\em arXiv preprint arXiv:1508.06615}, 2015.
+
+\bibitem{Kiros-et-al-ICML2014}
+R.~Kiros, R.~Salakhutdinov, and R.~Zemel.
+\newblock Multimodal neural language models.
+\newblock In {\em ICML'2014}, 2014.
+
+\bibitem{kneser1995improved}
+R.~Kneser and H.~Ney.
+\newblock Improved backing-off for m-gram language modeling.
+\newblock In {\em Acoustics, Speech, and Signal Processing, 1995. ICASSP-95.,
+  1995 International Conference on}, volume~1, pages 181--184. IEEE, 1995.
+
+\bibitem{koehn2004pharaoh}
+P.~Koehn.
+\newblock Pharaoh: a beam search decoder for phrase-based statistical machine
+  translation models.
+\newblock In {\em Machine translation: From real users to research}, pages
+  115--124. Springer, 2004.
+
+\bibitem{koehn2005europarl}
+P.~Koehn.
+\newblock Europarl: A parallel corpus for statistical machine translation.
+\newblock In {\em MT summit}, volume~5, pages 79--86. Citeseer, 2005.
+
+\bibitem{koehn2003statistical}
+P.~Koehn, F.~J. Och, and D.~Marcu.
+\newblock Statistical phrase-based translation.
+\newblock In {\em Proceedings of the 2003 Conference of the North American
+  Chapter of the Association for Computational Linguistics on Human Language
+  Technology-Volume 1}, pages 48--54. Association for Computational
+  Linguistics, 2003.
+
+\bibitem{krizhevsky2012imagenet}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Advances in neural information processing systems}, pages
+  1097--1105, 2012.
+
+\bibitem{kuhn2012structure}
+T.~S. Kuhn.
+\newblock {\em The structure of scientific revolutions}.
+\newblock University of Chicago press, 2012.
+
+\bibitem{le2015simple}
+Q.~V. Le, N.~Jaitly, and G.~E. Hinton.
+\newblock A simple way to initialize recurrent networks of rectified linear
+  units.
+\newblock {\em arXiv preprint arXiv:1504.00941}, 2015.
+
+\bibitem{lecun2015deep}
+Y.~LeCun, Y.~Bengio, and G.~Hinton.
+\newblock Deep learning.
+\newblock {\em Nature}, 521(7553):436--444, 2015.
+
+\bibitem{Lecun1998a}
+Y.~{LeCun}, L.~Bottou, G.~Orr, and K.~R. M\"{u}ller.
+\newblock Efficient {BackProp}.
+\newblock In G.~Orr and K.~M\"{u}ller, editors, {\em Neural Networks: Tricks of
+  the Trade}, volume 1524 of {\em Lecture Notes in Computer Science}, pages
+  5--50. Springer Verlag, 1998.
+
+\bibitem{Omer2014}
+O.~Levy and Y.~Goldberg.
+\newblock Neural word embedding as implicit matrix factorization.
+\newblock In Z.~Ghahramani, M.~Welling, C.~Cortes, N.~Lawrence, and
+  K.~Weinberger, editors, {\em Advances in Neural Information Processing
+  Systems 27}, pages 2177--2185. Curran Associates, Inc., 2014.
+
+\bibitem{ling2015character}
+W.~Ling, I.~Trancoso, C.~Dyer, and A.~W. Black.
+\newblock Character-based neural machine translation.
+\newblock {\em arXiv preprint arXiv:1511.04586}, 2015.
+
+\bibitem{lowe1999object}
+D.~G. Lowe.
+\newblock Object recognition from local scale-invariant features.
+\newblock In {\em Computer vision, 1999. The proceedings of the seventh IEEE
+  international conference on}, volume~2, pages 1150--1157. Ieee, 1999.
+
+\bibitem{luong2015}
+M.-T. Luong, Q.~V. Le, I.~Sutskever, O.~Vinyals, and L.~Kaiser.
+\newblock Multi-task sequence to sequence learning.
+\newblock {\em arXiv preprint ar{X}iv:1511.06114}, 2015.
+
+\bibitem{luong2015effective}
+M.-T. Luong, H.~Pham, and C.~D. Manning.
+\newblock Effective approaches to attention-based neural machine translation.
+\newblock {\em arXiv preprint arXiv:1508.04025}, 2015.
+
+\bibitem{manning1999foundations}
+C.~D. Manning and H.~Sch{\"u}tze.
+\newblock {\em Foundations of statistical natural language processing}.
+\newblock MIT press, 1999.
+
+\bibitem{Mao+al-arxiv2014}
+J.~Mao, W.~Xu, Y.~Yang, J.~Wang, and A.~L. Yuille.
+\newblock Explain images with multimodal recurrent neural networks.
+\newblock arXiv:1410.1090, 2014.
+
+\bibitem{mikolov2013efficient}
+T.~Mikolov, K.~Chen, G.~Corrado, and J.~Dean.
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em arXiv preprint arXiv:1301.3781}, 2013.
+
+\bibitem{mikolov2010recurrent}
+T.~Mikolov, M.~Karafi{\'a}t, L.~Burget, J.~Cernock{\`y}, and S.~Khudanpur.
+\newblock Recurrent neural network based language model.
+\newblock In {\em INTERSPEECH 2010}, pages 1045--1048, 2010.
+
+\bibitem{nair2010rectified}
+V.~Nair and G.~E. Hinton.
+\newblock Rectified linear units improve restricted boltzmann machines.
+\newblock In {\em Proceedings of the 27th International Conference on Machine
+  Learning (ICML-10)}, pages 807--814, 2010.
+
+\bibitem{papineni2002bleu}
+K.~Papineni, S.~Roukos, T.~Ward, and W.-J. Zhu.
+\newblock Bleu: a method for automatic evaluation of machine translation.
+\newblock In {\em Proceedings of the 40th annual meeting on association for
+  computational linguistics}, pages 311--318. Association for Computational
+  Linguistics, 2002.
+
+\bibitem{pascanu2013difficulty}
+R.~Pascanu, T.~Mikolov, and Y.~Bengio.
+\newblock On the difficulty of training recurrent neural networks.
+\newblock In {\em Proceedings of The 30th International Conference on Machine
+  Learning}, pages 1310--1318, 2013.
+
+\bibitem{perfors2006poverty}
+A.~Perfors, J.~Tenenbaum, and T.~Regier.
+\newblock Poverty of the stimulus? a rational approach.
+\newblock In {\em Annual Conference}, 2006.
+
+\bibitem{petersen2008matrix}
+K.~B. Petersen, M.~S. Pedersen, et~al.
+\newblock The matrix cookbook.
+\newblock {\em Technical University of Denmark}, 7:15, 2008.
+
+\bibitem{post2011}
+C.~W. Post.
+\newblock {\em The Three Percent Problem: Rants and Responses on Publishing,
+  Translation, and the Future of Reading}.
+\newblock Open Letter, 2011.
+
+\bibitem{resnik2003web}
+P.~Resnik and N.~A. Smith.
+\newblock The web as a parallel corpus.
+\newblock {\em Computational Linguistics}, 29(3):349--380, 2003.
+
+\bibitem{Robbins1951}
+H.~Robbins and S.~Monro.
+\newblock A stochastic approximation method.
+\newblock {\em The Annals of Mathematical Statistics}, 22(3):400--407, 1951.
+
+\bibitem{Rosenblatt1962}
+F.~Rosenblatt.
+\newblock {\em Principles of neurodynamics: perceptrons and the theory of brain
+  mechanisms}.
+\newblock Report (Cornell Aeronautical Laboratory). Spartan Books, 1962.
+
+\bibitem{russell1995artificial}
+S.~Russell and P.~Norvig.
+\newblock Artificial intelligence: a modern approach.
+\newblock 1995.
+
+\bibitem{schmidhuber2015deep}
+J.~Schmidhuber.
+\newblock Deep learning in neural networks: An overview.
+\newblock {\em Neural Networks}, 61:85--117, 2015.
+
+\bibitem{schwenk2007continuous}
+H.~Schwenk.
+\newblock Continuous space language models.
+\newblock {\em Computer Speech \& Language}, 21(3):492--518, 2007.
+
+\bibitem{sennrich2015neural}
+R.~Sennrich, B.~Haddow, and A.~Birch.
+\newblock Neural machine translation of rare words with subword units.
+\newblock {\em arXiv preprint arXiv:1508.07909}, 2015.
+
+\bibitem{sermanet2013overfeat}
+P.~Sermanet, D.~Eigen, X.~Zhang, M.~Mathieu, R.~Fergus, and Y.~LeCun.
+\newblock Overfeat: Integrated recognition, localization and detection using
+  convolutional networks.
+\newblock {\em arXiv preprint arXiv:1312.6229}, 2013.
+
+\bibitem{shannon1956bandwagon}
+C.~Shannon.
+\newblock The bandwagon (edtl.).
+\newblock {\em IRE Transactions on Information Theory}, 1(2):3, 1956.
+
+\bibitem{simonyan2014very}
+K.~Simonyan and A.~Zisserman.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock {\em arXiv preprint arXiv:1409.1556}, 2014.
+
+\bibitem{skinner2014verbal}
+B.~F. Skinner.
+\newblock {\em Verbal behavior}.
+\newblock BF Skinner Foundation, 2014.
+
+\bibitem{smith2013dirt}
+J.~R. Smith, H.~Saint-Amand, M.~Plamada, P.~Koehn, C.~Callison-Burch, and
+  A.~Lopez.
+\newblock Dirt cheap web-scale parallel text from the common crawl.
+\newblock In {\em ACL (1)}, pages 1374--1383, 2013.
+
+\bibitem{snover2006study}
+M.~Snover, B.~Dorr, R.~Schwartz, L.~Micciulla, and J.~Makhoul.
+\newblock A study of translation edit rate with targeted human annotation.
+\newblock In {\em Proceedings of association for machine translation in the
+  Americas}, pages 223--231, 2006.
+
+\bibitem{sundermeyer2015feedforward}
+M.~Sundermeyer, H.~Ney, and R.~Schluter.
+\newblock From feedforward to recurrent lstm neural networks for language
+  modeling.
+\newblock {\em Audio, Speech, and Language Processing, IEEE/ACM Transactions
+  on}, 23(3):517--529, 2015.
+
+\bibitem{sutskever2014sequence}
+I.~Sutskever, O.~Vinyals, and Q.~V. Le.
+\newblock Sequence to sequence learning with neural networks.
+\newblock In {\em Advances in neural information processing systems}, pages
+  3104--3112, 2014.
+
+\bibitem{szegedy2014going}
+C.~Szegedy, W.~Liu, Y.~Jia, P.~Sermanet, S.~Reed, D.~Anguelov, D.~Erhan,
+  V.~Vanhoucke, and A.~Rabinovich.
+\newblock Going deeper with convolutions.
+\newblock {\em arXiv preprint arXiv:1409.4842}, 2014.
+
+\bibitem{turian2010word}
+J.~Turian, L.~Ratinov, and Y.~Bengio.
+\newblock Word representations: a simple and general method for semi-supervised
+  learning.
+\newblock In {\em Proceedings of the 48th annual meeting of the association for
+  computational linguistics}, pages 384--394. Association for Computational
+  Linguistics, 2010.
+
+\bibitem{VanDerMaaten08}
+L.~{van der Maaten} and G.~E. Hinton.
+\newblock Visualizing data using t-{SNE}.
+\newblock {\em Journal of Machine Learning Research}, 9:2579--2605, November
+  2008.
+
+\bibitem{Vapnik1995}
+V.~Vapnik.
+\newblock {\em The Nature of Statistical Learning Theory}.
+\newblock Springer-Verlag New York, Inc., New York, NY, USA, 1995.
+
+\bibitem{vinyals2014show}
+O.~Vinyals, A.~Toshev, S.~Bengio, and D.~Erhan.
+\newblock Show and tell: A neural image caption generator.
+\newblock {\em arXiv preprint arXiv:1411.4555}, 2014.
+
+\bibitem{wang2015larger}
+T.~Wang and K.~Cho.
+\newblock Larger-context language modelling.
+\newblock {\em arXiv preprint arXiv:1511.03729}, 2015.
+
+\bibitem{weaver1955translation}
+W.~Weaver.
+\newblock Translation.
+\newblock {\em Machine translation of languages}, 14:15--23, 1955.
+
+\bibitem{weston2010large}
+J.~Weston, S.~Bengio, and N.~Usunier.
+\newblock Large scale image annotation: learning to rank with joint word-image
+  embeddings.
+\newblock {\em Machine learning}, 81(1):21--35, 2010.
+
+\bibitem{winograd1972understanding}
+T.~Winograd.
+\newblock Understanding natural language.
+\newblock {\em Cognitive psychology}, 3(1):1--191, 1972.
+
+\bibitem{xu2015show}
+K.~Xu, J.~Ba, R.~Kiros, K.~Cho, A.~Courville, R.~Salakhutdinov, R.~Zemel, and
+  Y.~Bengio.
+\newblock Show, attend and tell: Neural image caption generation with visual
+  attention.
+\newblock In {\em International Conference on Machine Learning}, 2015.
+
+\bibitem{zhang2006automatic}
+Y.~Zhang, K.~Wu, J.~Gao, and P.~Vines.
+\newblock Automatic acquisition of chinese--english parallel corpus from the
+  web.
+\newblock In {\em Advances in Information Retrieval}, pages 420--431. Springer,
+  2006.
+
+\bibitem{zhou2005beam}
+R.~Zhou and E.~A. Hansen.
+\newblock Beam-stack search: Integrating backtracking with beam search.
+\newblock In {\em ICAPS}, pages 90--98, 2005.
+
+\end{thebibliography}

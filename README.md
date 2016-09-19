@@ -15,4 +15,8 @@ urge to do so, please cite it using
   note={Lecture Note for DS-GA 3001}
 }
  
+The slides directory contains slides for a Fall 2016 fork of this course by Sam Bowman. The syllabus for that course can be found here:
+
+https://docs.google.com/document/d/1YS5QRvqMJVs9n3sK5fFjuldY7_vh42C5uUfxUGgL-Gc/edit?usp=sharing
+
 

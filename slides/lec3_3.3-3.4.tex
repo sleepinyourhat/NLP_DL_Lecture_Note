@@ -78,6 +78,10 @@
 
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{url,latexsym,amsmath,amsthm,xspace,rotating,multirow,multicol,xspace,amssymb,paralist}
+
+\input{../macros.tex}
+\renewcommand{\alert}[1]{\textcolor{red}{#1}}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -111,150 +115,570 @@ Based on lecture notes by Kyunghyun Cho
 %	PRESENTATION SLIDES
 %----------------------------------------------------------------------------------------
 
-%------------------------------------------------
-\section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
-%------------------------------------------------
-
-\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+\section{Introductions \& Administrativia}
 
 \begin{frame}
-\frametitle{Paragraphs of Text}
-Sed iaculis dapibus gravida. Morbi sed tortor erat, nec interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed tellus ipsum. Donec vestibulum ligula non lorem vulputate fermentum accumsan neque mollis.\\~\\
+\frametitle{Introductions \& Administrativia}
 
-Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero. Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Bullet Points}
 \begin{itemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-\item Nam cursus est eget velit posuere pellentesque
-\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
+\item You
+% Who has taken a class that uses DL?
+% CDS students
+% CS masters
+% PhD
+% UG
+% Say your name before questions!
+\item Me (hi again!)
+\item Changes from the original syllabus. So far:
+\begin{itemize}
+\item MT (pending)
+\item Topics
+\item Slides
+\end{itemize}
+\item Questions?
 \end{itemize}
 \end{frame}
 
-%------------------------------------------------
+\begin{frame}
+\frametitle{Overview} 
+\tableofcontents
+\end{frame}
+
+\section{Multilayer Perceptron}
 
 \begin{frame}
-\frametitle{Blocks of Highlighted Text}
-\begin{block}{Block 1}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-\end{block}
+\frametitle{Multilayer Perceptron}
 
-\begin{block}{Block 2}
-Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
-\end{block}
+\begin{itemize}
+\item The \textit{classic} deep artificial neural network (ca. 1962).
+\item Structure:
+\begin{itemize}
+\item Input $\vx$
+\item ...feeds a sequence of one or more hidden layers
+\begin{align*}
+    \phi_0(\vx) = g(\mW_0 \vx + \vb_0),
+\end{align*}
+Where $g\in$
+\begin{itemize}
+        \item Sigmoid: $\sigma(x) = \frac{1}{1+\exp(-x)}$
+        \item Hyperbolic function: $\tanh(x) = \frac{1-\exp(-2x)}{1+\exp(-2x)}$
+        \item Rectified linear unit: $\rect(x) = \max(0, x)$
+    \end{itemize}
+\item ...which feed an output layer (usually softmax)
+\end{itemize}
+\end{itemize}
 
-\begin{block}{Block 3}
-Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
-\end{block}
 \end{frame}
 
-%------------------------------------------------
+\subsection{Example: Binary classification with a single hidden unit}
+
 
 \begin{frame}
-\frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+\frametitle{Simplest possible MLP: Structure}
 
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
+\begin{itemize}
+\item Structure:
+\begin{itemize}
+\item Scalar input $x \in \RR$
+\item ...feeds one hidden layer
+\begin{align*}
+    \phi(x) = \sigma(u x + c)
+\end{align*}
+\item ...which feeds a sigmoid output layer representing a (Bernoulli) conditional probability $p(y|x)$ over a Boolean output variable $y$.
+\begin{align*}
+    \mu = f(x) = \sigma(w \phi(x) + b)
+\end{align*}
+\end{itemize}
+\item ...where
+\begin{align*}
+    \sigma(x) = \frac{1}{1+\exp(-x)}.
+\end{align*}
+\item Four scalar parameters: $u, c, w, b$
+\end{itemize}
 
-\column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-\end{columns}
 \end{frame}
 
-%------------------------------------------------
-\section{Second Section}
-%------------------------------------------------
 
 \begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
+\frametitle{Simplest possible MLP: Cost Function}
+
+\begin{itemize}
+\item Objective: Minimize KL divergence between
+\begin{itemize}
+\item true (empirical) conditional distribution $p(y|x)$ 
+\item predicted conditional distribution $\hat{p}(y|x)$
+\end{itemize}
+\begin{align*}
+    \KL(p\|\hat{p}) =& \sum_{y \in \left\{0, 1\right\}} p(y|x) \log
+    \frac{p(y|x)}{\hat{p}(y|x)} \\
+    =& \sum_{y \in \left\{0, 1\right\}} p(y|x) \log p(y|x) - p(y|x) \log
+    {\hat{p}(y|x)}.
+\end{align*}
+\item Equivalent to minimizing:
+\begin{align*}
+ - \sum_{y \in \left\{0, 1\right\}} p(y|x) \log {\hat{p}(y|x)}.
+\end{align*}
+\end{itemize}
+
 \end{frame}
 
-%------------------------------------------------
+
 
 \begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
+\frametitle{Simplest possible MLP: Cost Function}
+
+\begin{itemize}
+\item When we compute gradients for gradient descent, we'll be computing the \textit{per sample} version of this cost function and averaging
+\begin{align*}
+    C_x =& - \log \hat{p}(y|x) \\
+    =& - \log \mu^y (1-\mu)^{1-y} \\
+    =& - y \log \mu - (1-y) \log (1-\mu)
+\end{align*}
+\item Our task: Define the gradient for each of our four parameters wrt. $C_x$: $\frac{\partial C_x}{\partial u}, \frac{\partial C_x}{\partial c}, \frac{\partial C_x}{\partial w}, \frac{\partial C_x}{\partial b}$
+
+\end{itemize}
+
 \end{frame}
 
-%------------------------------------------------
 
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Verbatim}
-\begin{example}[Theorem Slide Code]
-\begin{verbatim}
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}\end{verbatim}
-\end{example}
-\end{frame}
 
-%------------------------------------------------
 
 \begin{frame}
-\frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
-%\end{figure}
+\frametitle{Simplest possible MLP: Gradient}
+
+\begin{itemize}
+\item Let's start with $w$ and use the chain rule:
+\begin{align*}
+    \frac{\partial C_x}{\partial w} = \frac{\partial C_x}{\partial \mu}
+    \frac{\partial \mu}{\partial \underline{\mu}}
+    \frac{\partial \underline{\mu}}{\partial w}
+\end{align*}
+($\underline{\mu} = w \phi(x) + b$, which is the input to $f$)
+\item Starting from the left...
+\begin{align*}
+    \frac{\partial C_x}{\partial \mu} \underbrace{\frac{\partial \mu}{\partial
+    \underline{\mu}}}_{=\mu'} & = 
+    -\frac{y}{\mu}\mu' +
+    \frac{1-y}{1-\mu}\mu'\\ 
+   & = \frac{-y + y\mu + \mu - y\mu }{\mu(1-\mu)}\mu' 
+    = \frac{\mu - y}{\mu(1-\mu)}\mu' 
+    = \mu - y
+\end{align*}
+(the derivative of $\sigma(\mu)$ is $\mu (1-\mu)$.)
+\end{itemize}
+
 \end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Citation}
-An example of the \verb|\cite| command to cite within the presentation:\\~
-
-This statement requires citation \cite{p1}.
-\end{frame}
-
-%------------------------------------------------
 
 \begin{frame}
-\frametitle{References}
-\footnotesize{
-\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
-\end{thebibliography}
-}
+\frametitle{Simplest possible MLP: Gradient}
+
+\begin{itemize}
+\item Continuing with $\frac{\partial C_x}{\partial w}$, all we need is: 
+\begin{align*}
+\frac{\partial \underline{\mu}}{\partial w} = \phi(x)
+\end{align*}
+\item So:
+\begin{align*}
+\frac{\partial C_x}{\partial w} = \frac{\partial C_x}{\partial \mu}
+    \frac{\partial \mu}{\partial \underline{\mu}}
+    \frac{\partial \underline{\mu}}{\partial w} = (\mu - y)\phi(x)
+\end{align*}
+\end{itemize}
+
 \end{frame}
 
-%------------------------------------------------
 
 \begin{frame}
-\Huge{\centerline{The End}}
+\frametitle{Simplest possible MLP: Gradient}
+
+\begin{itemize}
+\item Now let's try $b$ and use the chain rule:
+\begin{align*}
+    \frac{\partial C_x}{\partial b} = \frac{\partial C_x}{\partial \mu}
+    \frac{\partial \mu}{\partial \underline{\mu}}\color{black}
+    \frac{\partial \underline{\mu}}{\partial b}
+\end{align*}
+\item Starting from the left, we need...
+\begin{align*}
+    \frac{\partial C_x}{\partial \mu} \underbrace{\frac{\partial \mu}{\partial
+    \underline{\mu}}}_{=\mu'} & = 
+    -\frac{y}{\mu}\mu' +
+    \frac{1-y}{1-\mu}\mu'\\ 
+   & = \frac{-y + y\mu + \mu - y\mu }{\mu(1-\mu)}\mu' 
+    = \frac{\mu - y}{\mu(1-\mu)}\mu' 
+    = \mu - y
+\end{align*}
+\end{itemize}
+
 \end{frame}
+
+\begin{frame}
+\frametitle{Simplest possible MLP: Gradient}
+
+
+\begin{itemize}
+\item Now let's try $b$ and use the chain rule:
+\begin{align*}
+    \frac{\partial C_x}{\partial b} = \color{green}\frac{\partial C_x}{\partial \mu}
+    \frac{\partial \mu}{\partial \underline{\mu}}\color{black}
+    \frac{\partial \underline{\mu}}{\partial b}
+\end{align*}
+\item Starting from the left, we need...
+\begin{align*}
+    \frac{\partial C_x}{\partial \mu} \underbrace{\frac{\partial \mu}{\partial
+    \underline{\mu}}}_{=\mu'} & = 
+    -\frac{y}{\mu}\mu' +
+    \frac{1-y}{1-\mu}\mu'\\ 
+   & = \frac{-y + y\mu + \mu - y\mu }{\mu(1-\mu)}\mu' 
+    = \frac{\mu - y}{\mu(1-\mu)}\mu' 
+    = \mu - y
+\end{align*}
+\item But we already computed that! [Foreshadowing.]
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Simplest possible MLP: Gradient}
+
+\begin{itemize}
+\item On to $u$ and $c$. Let's use the chain rule again...
+\begin{align*}
+    \frac{\partial C_x}{\partial u} =& \color{green} \frac{\partial C_x}{\partial
+    \underline{\mu}}
+    \color{blue} \frac{\partial \underline{\mu}}{\partial \phi}
+    \frac{\partial \phi}{\partial \underline{\phi}}
+    \color{black} \frac{\partial \underline{\phi}}{\partial u} \\
+    \frac{\partial C_x}{\partial c} =& \color{green}\frac{\partial C_x}{\partial
+    \underline{\mu}}
+    \color{blue} \frac{\partial \underline{\mu}}{\partial \phi}
+     \frac{\partial \phi}{\partial \underline{\phi}}
+    \color{black} \frac{\partial \underline{\phi}}{\partial c}
+\end{align*}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Simplest possible MLP: Gradient}
+
+\begin{itemize}
+\item Continuing with what we still need...
+\begin{align*}
+    &\frac{\partial \underline{\mu}}{\partial \phi}\underbrace{\frac{\partial \phi}{\partial
+    \underline{\phi}}}_{=\phi'} = w \phi' = w \phi(x) (1- \phi(x))\\
+    &\frac{\partial \underline{\phi}}{\partial u} = x \\
+    &\frac{\partial \underline{\phi}}{\partial c} = 1
+\end{align*}
+\item And we're done!
+\begin{align*}
+    \frac{\partial C_x}{\partial u} =& (\mu -y) w \phi(x) (1-\phi(x)) x \\
+    \frac{\partial C_x}{\partial c} =& (\mu -y) w \phi(x) (1-\phi(x))
+\end{align*}
+\end{itemize}
+
+\end{frame}
+
+
+\subsection{Example: Binary classification with more than one hidden unit}
+
+
+\begin{frame}
+\frametitle{A more realistic MLP: Structure}
+
+\begin{itemize}
+\item Structure:
+	\begin{itemize}
+	\item Vector input $x \in \RR^d$
+	\item ...feeds one vector-valued hidden layer
+	\begin{align*}
+	    \phi(x) = \sigma(U x + c)
+	\end{align*}
+	where $U \in \RR^{l \times d}$ and $c \in \RR^l$
+	\item ...which feeds a sigmoid output layer representing a (Bernoulli) conditional probability $p(y|x)$ over a Boolean output variable $y$.
+	\begin{align*}
+	    \mu = f(x) = \sigma(w \phi(x) +  b)
+	\end{align*}
+	where $w \in \RR^{l}$ and $b \in \RR$
+	\end{itemize}
+\item Four parameters: $U, c, w, b$
+\item In all cases we'll be looking at, the nonlinearity (here $\sigma$) is applied elementwise.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{A more realistic MLP: Gradient}
+
+\begin{itemize}
+\item Keeping the cost as before, let's start with $W$ and use the chain rule:
+\begin{align*}
+    \frac{\partial C_x}{\partial w} = \color{green}\frac{\partial C_x}{\partial \mu}
+    \frac{\partial \mu}{\partial \underline{\mu}}
+    \color{black}\frac{\partial \underline{\mu}}{\partial w}
+\end{align*}
+\item $w$ is now a vector, so the function computing $\underline{\mu}$ is now more complex
+\begin{align*}
+    \underline{\mu} = w^\top \phi(x) + b = \sum_{i=1}^l w_i \phi_i(x) + b.
+\end{align*}
+\item Let's start by thinking of $\frac{\partial \underline{\mu}}{\partial w}$ as a vector of scalar partial derivatives 
+\begin{align*}
+    \frac{\partial \underline{\mu}}{\partial w} = \left[ 
+        \frac{\partial \underline{\mu}}{\partial w_1}, \frac{\partial
+        \underline{\mu}}{\partial w_2}, \ldots, \frac{\partial
+        \underline{\mu}}{\partial w_l}
+    \right]^\top = \left[ \phi_1(x), \phi_2(x), \ldots, \phi_l(x) \right]^\top
+    = \phi(x)
+\end{align*}
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{A more realistic MLP: Gradient}
+
+\begin{itemize}
+\item So, as before,
+\begin{align*}
+    \frac{\partial C_x}{\partial w} & = \frac{\partial C_x}{\partial \mu}
+    \frac{\partial \mu}{\partial \underline{\mu}}
+    \color{black}\frac{\partial \underline{\mu}}{\partial w}\\
+& = (\mu -y) \phi(x)
+\end{align*}
+\item Similarly, 
+\begin{align*}
+    \frac{\partial C_x}{\partial b} & = \frac{\partial C_x}{\partial \mu}
+    \frac{\partial \mu}{\partial \underline{\mu}}
+    \color{black}\frac{\partial \underline{\mu}}{\partial b}\\
+& = \mu -y
+\end{align*}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{A more realistic MLP: Gradient}
+
+\begin{itemize}
+\item Now back to $u$ and $c$. Let's use the chain rule again...
+\begin{align*}
+    \frac{\partial C_x}{\partial U} =& \color{green} \frac{\partial C_x}{\partial
+    \underline{\mu}}
+    \color{blue} \frac{\partial \underline{\mu}}{\partial \phi}
+    \frac{\partial \phi}{\partial \underline{\phi}}
+    \color{black} \frac{\partial \underline{\phi}}{\partial U} \\
+    \frac{\partial C_x}{\partial c} =& \color{green}\frac{\partial C_x}{\partial
+    \underline{\mu}}
+    \color{blue} \frac{\partial \underline{\mu}}{\partial \phi}
+     \frac{\partial \phi}{\partial \underline{\phi}}
+    \color{black} \frac{\partial \underline{\phi}}{\partial c}
+\end{align*}
+\item We can use the same vector trick as just before (taking advantage of some symmetry) to show
+\begin{align*}
+    \frac{\partial \underline{\mu}}{\partial \phi} = w
+\end{align*}
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{A more realistic MLP: Gradient}
+
+
+\begin{itemize}
+\item Because $\sigma$ is elementwise, we can simply
+compute its derivative for each element in $\phi(x)$
+\begin{align*}
+    \frac{\partial \phi}{\partial \underline{\phi}} = 
+    \diag\left(\left[ \phi_1'(x), \phi_2'(x), \ldots, \phi_l'(x)
+    \right]^\top\right)
+\end{align*}
+where $\diag$ returns a diagonal matrix of the input vector
+\item This gets us 
+\begin{align*}
+\frac{\partial C_x}{\partial \underline{\phi}} = 
+    (\mu - y)w^\top \phi'(x) = (\mu - y) (w \odot \diag(\phi'(x))),
+\end{align*}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{A more realistic MLP: Gradient}
+
+
+\begin{itemize}
+\item On to the last step...
+\begin{align*}
+    \frac{\partial \underline{\phi}}{\partial U} = \frac{\partial U^\top
+    x}{\partial U} = x
+\end{align*}
+\item So...
+\begin{align} 
+    \frac{\partial C_x}{\partial U} = (\mu - y) (w \odot \diag(\phi'(x)))
+    x^\top
+\end{align}
+\item And we can easily generalize to $c$:
+\begin{align} 
+    \frac{\partial C_x}{\partial U} = (\mu - y) (w \odot \diag(\phi'(x)))
+\end{align}
+\item Now all we have to do is hope SGD converges! Yay?
+\end{itemize}
+
+\end{frame}
+
+\section{Automating Backpropagation}
+
+\begin{frame}
+\frametitle{Visualizing Backpropagation}
+
+\begin{figure}[ht]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{../figures/comp_graph.pdf}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{../figures/comp_node.pdf}
+    \end{minipage}
+
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        (a)
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        (b)
+    \end{minipage}
+    \caption{(a) A graphical representation of the computational graph of the
+    example network. (b) A graphical illustration
+    of a function node ({\color{blue} $\to$}: forward pass, {\color{red}
+$\leftarrow$}: backward pass.)}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Visualizing Backpropagation}
+
+\begin{figure}[ht]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{../figures/comp_graph.pdf}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \begin{itemize}
+        \item If you can compute the local gradients for the function nodes, backprop is easy (and easy to automate).
+        \item Inventory of common function nodes is pretty small (dozens), easy to find good library code w/ gradients.
+        \item So, use TensorFlow/Theano/Torch/etc. and never apply the chain rule yourself again!
+        \end{itemize}
+    \end{minipage}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Summing up: Backpropagation}
+
+\begin{itemize}
+\item Nothing more than clever application of the chain rule
+\item If we compute the gradients we need in the right order (moving backwards through the \textit{computation graph}), each one will:
+\begin{itemize}
+\item Require only simple functions of local variables \textit{and/or} partial gradients we've already computed
+\item Therefore take only about as long as the corresponding computation in the forward pass
+\end{itemize}
+\item So gradient computation takes about as long as forward computation!
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Bonus issue: Gradients as graphs}
+
+\begin{itemize}
+\item Why not represent gradient computation as a second computation graph derived from the first?
+\item Lets us compute gradients of (gradients of (gradients of)) gradients, visualize gradients with the same tools we use for the rest of the graph, etc.
+\item Implemented in Torch, Theano
+\end{itemize}
+
+\end{frame}
+
+\subsection{What if a Function is {\em not} Differentiable?}
+
+\begin{frame}
+\frametitle{Differentiability}
+
+\begin{itemize}
+\item Backpropagation requires that every function node is differentiable wrt. its inputs and parameters
+\item All the standard NN building blocks are:
+\begin{itemize}
+\item Matrix multiplication (normal or elementwise), addition: See above and/or Matrix Cookbook
+\item Sigmoid nonlinearity:  $\sigma'(x) = \sigma(x) (1 - \sigma(x))$
+\item $\tanh$ nonlinearity:  $\tanh'(x) = \left(\frac{2}{\exp(x)+\exp(-x)}\right)^2$
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Differentiability}
+
+\begin{itemize}
+\item ReLU is a bit more complicated:
+\begin{align*}
+\rect'(x) = \left\{ 
+        \begin{array}{l l}
+            1, & \text{if }x > 0 \\
+            0, & \text{if }x < 0
+        \end{array}
+        \right.
+\end{align*}
+\item Exact zero values for $x$ are rare enough to not matter (can stipulatively change $<$ to $\leq$)
+\item Exact zero values for $\rect{x}$ are common, and block gradients from flowing backwards...
+\item ...but only for some elements in some examples, so it learns anyway
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Differentiability}
+
+\begin{itemize}
+\item What if you want to incorporate a function that just isn't differentiable?
+\item This includes most functions you might dream up! Examples:
+\begin{itemize}
+\item Sampling from a multinomial distribution $P(m|x)$
+\item Looking up the $int(x)$-th row of a matrix
+\item Identifying the argmax index into $x$
+\end{itemize}
+\item You can compute gradients and use SGD, but you'll generally have to resort to slower and less reliable techniques (mostly: reinforcement learning). Stay tuned 'til the end of the course.
+\end{itemize}
+
+\end{frame}
+
+\section{Next time}
+
+\begin{frame}
+\begin{itemize}
+\item Lab tomorrow
+\item Reading: 
+\item Lecture: RNNs and word vectors!
+\item HW 1: Due in eight days
+\end{itemize}
+\end{frame}
+
 
 %----------------------------------------------------------------------------------------
 
